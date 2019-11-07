@@ -9,7 +9,13 @@ let package = Package(
     )
   ],
   targets: [
-    .target(name: "Jay")
+    .target(name: "Jay",
+           path: "Sources/Jay",
+            exclude: [
+                "Tests",
+                "Sources/JayExample",
+                "Sources/JayPerformance"
+            ])
   ]
 )
 
